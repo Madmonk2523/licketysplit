@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lickety Split | Soft Serve Ice Cream Truck</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="nav__brand">Lickety Split</div>
+    <button class="nav__toggle" id="menu-toggle" aria-label="Toggle navigation">☰</button>
+    <nav class="nav__links" id="nav-links">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#find">Find Us</a>
+      <a href="#booking">Book Us</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav__cta" id="nav-phone" href="tel:+19739076000">Call</a>
+  </header>
+
+  <main>
+    <section id="home" class="section section--hero">
+      <div class="container hero">
+        <div class="hero__text">
+          <p class="pill">Soft Serve Truck • Woodland Park, NJ</p>
+          <h1>Soft Serve. <span class="gradient">Big Smiles.</span></h1>
+          <p class="lede">Catch our truck in Woodland Park and nearby towns—classic cones, sundaes, and swirls.</p>
+          <div class="actions">
+            <a class="btn btn--primary" href="#menu">🍦 View Menu</a>
+            <a class="btn btn--secondary" id="hero-call" href="tel:+19739076000">📞 Call Now</a>
+          </div>
+        </div>
+        <div class="hero__card">
+          <div class="hero__emoji">🍦</div>
+          <p class="hero__title">Photo Coming Soon!</p>
+          <p class="hero__caption">Ice cream truck hero image</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="status" class="section section--card">
+      <div class="container status" id="status-card">
+        <div>
+          <p class="pill pill--soft">Now Scooping</p>
+          <h2 id="status-text">Open • Closes 9 PM</h2>
+          <p class="muted">Serving Woodland Park and nearby towns. Follow us for today’s location.</p>
+          <div class="actions">
+            <a class="btn btn--primary" id="directions-btn" href="#">📍 Directions</a>
+            <a class="btn btn--ghost" id="status-call" href="tel:+19739076000">Call (973) 907-6000</a>
+          </div>
+        </div>
+        <div class="status__badge">🚚 <span>Find the truck</span></div>
+      </div>
+    </section>
+
+    <section id="menu" class="section">
+      <div class="container">
+        <header class="section__header">
+          <p class="pill">Our Menu</p>
+          <h2>Soft serve, sundaes, shakes, toppings</h2>
+          <p class="muted">Fan favorites plus your pick of toppings.</p>
+        </header>
+
+        <div class="grid" id="featured-grid"></div>
+
+        <div class="tabs" id="menu-tabs"></div>
+        <div class="grid grid--3" id="menu-items"></div>
+      </div>
+    </section>
+
+    <section id="find" class="section section--tone">
+      <div class="container">
+        <header class="section__header">
+          <p class="pill">Find Us</p>
+          <h2>Four easy steps</h2>
+          <p class="muted">From checking hours to enjoying your swirl.</p>
+        </header>
+        <div class="grid grid--4" id="steps-grid">
+          <article class="card card--lift"><div class="step">1</div><h3>Check Hours</h3><p>We’re usually open until 9 PM.</p></article>
+          <article class="card card--lift"><div class="step">2</div><h3>Follow Us</h3><p>Get daily location updates.</p></article>
+          <article class="card card--lift"><div class="step">3</div><h3>Find the Truck</h3><p>Look for our colorful truck.</p></article>
+          <article class="card card--lift"><div class="step">4</div><h3>Order & Enjoy</h3><p>Pick your favorite treat.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking" class="section section--highlight">
+      <div class="container booking">
+        <div>
+          <p class="pill pill--soft">Book the Truck</p>
+          <h2>Perfect for parties and events</h2>
+          <p class="muted">Birthdays, school events, corporate gatherings, and more. Call or email and we’ll confirm within 24–48 hours.</p>
+          <div class="actions">
+            <a class="btn btn--primary" id="book-call" href="tel:+19739076000">📞 Call to Book</a>
+            <a class="btn btn--outline" href="mailto:info@example.com">✉️ Email Us</a>
+          </div>
+        </div>
+        <div class="booking__badge">🎉</div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section">
+      <div class="container">
+        <header class="section__header">
+          <p class="pill">Reviews</p>
+          <h2>What people are saying</h2>
+          <p class="muted">Real reviews from local ice cream lovers.</p>
+        </header>
+        <div class="grid grid--2" id="testimonial-grid"></div>
+      </div>
+    </section>
+
+    <section id="faq" class="section section--tone">
+      <div class="container">
+        <header class="section__header">
+          <p class="pill">FAQ</p>
+          <h2>Everything you need to know</h2>
+        </header>
+        <div class="faq" id="faq-list"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section--cta">
+      <div class="container contact">
+        <div>
+          <p class="pill pill--soft">Get in touch</p>
+          <h2>Ready for a swirl?</h2>
+          <p class="muted">Find us today—or book us for your next event.</p>
+          <div class="actions">
+            <a class="btn btn--secondary" id="contact-call" href="tel:+19739076000">Call Now</a>
+            <a class="btn btn--ghost" id="contact-follow" href="#">Follow for Locations</a>
+            <a class="btn btn--outline" href="#booking">Book the Truck</a>
+          </div>
+        </div>
+        <div class="contact__emoji">📞</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <h3>Lickety Split</h3>
+        <p class="muted">Soft serve ice cream truck serving Woodland Park, NJ and nearby towns.</p>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <p id="footer-address">85 Pompton Ave, Woodland Park, NJ 07424</p>
+        <p id="footer-hours" class="muted">Open • Closes 9 PM</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a id="footer-phone" href="tel:+19739076000">(973) 907-6000</a></p>
+        <p><a href="mailto:info@example.com">info@example.com</a></p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <div class="footer__links">
+          <a href="#menu">Menu</a>
+          <a href="#booking">Book Us</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+    <p class="footer__note">© <span id="year"></span> Lickety Split. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
