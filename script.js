@@ -43,7 +43,7 @@ const testimonials = [
 
 const faqs = [
   { q: 'Do you accept credit cards?', a: 'Yes! Cash, credit cards, and mobile payments are welcome.' },
-  { q: 'Where can I find the truck?', a: 'We serve Woodland Park and nearby towns. Follow us for daily locations.' },
+  { q: 'Where can I find the truck?', a: 'We serve the Woodland Park area. Follow us for daily locations.' },
   { q: 'Do you cater events?', a: 'Absolutely—birthdays, schools, corporate events, and more.' },
 ]
 
