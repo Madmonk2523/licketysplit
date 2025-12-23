@@ -1,37 +1,50 @@
 // Basic data
 const featured = [
-  { name: 'Classic Twist Cone', desc: 'Vanilla, chocolate, or swirl', price: '$4.50' },
-  { name: 'Hot Fudge Sundae', desc: 'Rich fudge, whipped cream, cherry', price: '$6.50' },
-  { name: 'Cookies & Cream Shake', desc: 'Blended with real Oreos', price: '$6.50' },
+  { name: 'Double Cone', desc: 'Plain or with toppings', price: '$5.00' },
+  { name: 'Chocolate Sundae', desc: 'Rich chocolate sauce', price: '$6.00' },
+  { name: 'Oreo Crunch Shake', desc: 'Loaded with Oreos', price: '$8.00' },
 ]
 
 const categories = [
-  { id: 'soft-serve', label: 'Soft Serve' },
+  { id: 'cones', label: 'Cones & Cups' },
   { id: 'sundaes', label: 'Sundaes' },
-  { id: 'shakes', label: 'Shakes' },
-  { id: 'toppings', label: 'Toppings' },
+  { id: 'shakes', label: 'Shakes & Floats' },
+  { id: 'slush', label: 'Slush' },
 ]
 
 const menuItems = {
-  'soft-serve': [
-    { name: 'Classic Twist Cone', desc: 'Vanilla, chocolate, or swirl', price: '$4.50' },
-    { name: 'Waffle Cone Delight', desc: 'Crispy golden waffle cone', price: '$5.50' },
-    { name: 'Dipped Cone', desc: 'Chocolate, cherry, or butterscotch shell', price: '$5.00' },
+  cones: [
+    { name: 'Plain Cone or Cup', desc: 'Classic soft serve', price: '$3.50' },
+    { name: 'Cone/Cup with Toppings', desc: 'Your choice of toppings', price: '$4.50' },
+    { name: 'Cone with Dip', desc: 'Chocolate, cherry, or butterscotch', price: '$5.00' },
+    { name: 'Double Cone - Plain', desc: 'Double the ice cream', price: '$5.00' },
+    { name: 'Double Cone with Toppings', desc: 'Double with toppings', price: '$6.00' },
+    { name: 'Flavor Burst', desc: 'Cone or cup with flavor burst', price: '$5.00' },
+    { name: 'Waffle Cone - Plain', desc: 'Fresh waffle cone', price: '$5.00' },
+    { name: 'Waffle Cone with Toppings', desc: 'Waffle cone loaded', price: '$6.50' },
   ],
   sundaes: [
-    { name: 'Hot Fudge Sundae', desc: 'Fudge, whipped cream, cherry', price: '$6.50' },
-    { name: 'Caramel Dream', desc: 'Smooth caramel and nuts', price: '$6.50' },
-    { name: 'Banana Split', desc: 'Three scoops, toppings galore', price: '$8.00' },
+    { name: 'Chocolate Sundae', desc: 'Rich chocolate sauce', price: '$6.00' },
+    { name: 'Caramel Sundae', desc: 'Smooth caramel', price: '$6.00' },
+    { name: 'Strawberry Sundae', desc: 'Sweet strawberry topping', price: '$6.00' },
+    { name: 'Pineapple Sundae', desc: 'Tropical pineapple', price: '$6.00' },
+    { name: 'Crushed Cherry Sundae', desc: 'Cherry lovers dream', price: '$6.00' },
+    { name: 'Chocolate Nut Sundae', desc: 'Chocolate with nuts', price: '$7.00' },
+    { name: 'Banana Boat', desc: 'The ultimate sundae', price: '$9.00' },
   ],
   shakes: [
-    { name: 'Classic Shake', desc: 'Vanilla, chocolate, strawberry', price: '$5.50' },
-    { name: 'Cookies & Cream', desc: 'Loaded with Oreos', price: '$6.50' },
-    { name: 'Mint Chip Shake', desc: 'Cool mint, chocolate chips', price: '$6.00' },
+    { name: 'Vanilla Shake', desc: 'Classic vanilla', price: '$7.00' },
+    { name: 'Chocolate Shake', desc: 'Rich chocolate', price: '$7.00' },
+    { name: 'Strawberry Shake', desc: 'Fresh strawberry', price: '$7.00' },
+    { name: 'Oreo Crunch Shake', desc: 'Loaded with Oreos', price: '$8.00' },
+    { name: 'Pineapple Shake', desc: 'Tropical twist', price: '$8.00' },
+    { name: 'Banana Shake', desc: 'Creamy banana', price: '$8.00' },
+    { name: 'Mango Shake', desc: 'Exotic mango flavor', price: '$8.00' },
+    { name: 'Soda Float', desc: 'Classic ice cream float', price: '$7.00' },
   ],
-  toppings: [
-    { name: 'Rainbow Sprinkles', desc: 'Colorful crunch', price: '$0.75' },
-    { name: 'Hot Fudge', desc: 'Warm, rich chocolate', price: '$1.25' },
-    { name: 'Cookie Crumble', desc: 'Oreo or graham pieces', price: '$1.00' },
+  slush: [
+    { name: 'Slush', desc: 'Frozen and refreshing', price: '$4.50' },
+    { name: 'Slush Float', desc: 'Slush with ice cream', price: '$6.50' },
   ],
 }
 
