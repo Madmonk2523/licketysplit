@@ -85,19 +85,6 @@ qs('#directions-btn').addEventListener('click', (e) => {
   window.open('https://www.google.com/maps/dir/?api=1&destination=85%20Pompton%20Ave%2C%20Woodland%20Park%2C%20NJ%2007424', '_blank')
 })
 
-// Featured grid
-const featuredGrid = qs('#featured-grid')
-featured.forEach((item) => {
-  const card = create('article', 'card card--lift')
-  const title = create('h3', '', item.name)
-  const desc = create('p', 'muted', item.desc)
-  const price = create('p', '', item.price)
-  price.style.fontWeight = '700'
-  price.style.color = '#b83280'
-  card.append(title, desc, price)
-  featuredGrid.append(card)
-})
-
 // Menu tabs + items
 const tabsWrap = qs('#menu-tabs')
 const itemsGrid = qs('#menu-items')
@@ -119,13 +106,13 @@ const renderTabs = () => {
 const renderItems = () => {
   itemsGrid.innerHTML = ''
   menuItems[activeTab].forEach((item) => {
-    const card = create('article', 'card card--lift')
-    const title = create('h3', '', item.name)
-    const desc = create('p', 'muted', item.desc)
-    const price = create('p', '', item.price)
-    price.style.fontWeight = '700'
-    price.style.color = '#0f172a'
-    card.append(title, desc, price)
+    const card = create('article', 'menu-card')
+    const header = create('div', 'menu-card__header')
+    const title = create('h3', 'menu-card__title', item.name)
+    const price = create('span', 'menu-card__price', item.price)
+    header.append(title, price)
+    const desc = create('p', 'menu-card__desc', item.desc)
+    card.append(header, desc)
     itemsGrid.append(card)
   })
 }
