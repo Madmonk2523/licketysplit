@@ -56,7 +56,7 @@ const testimonials = [
 
 const faqs = [
   { q: 'Do you accept credit cards?', a: 'Yes! Cash, credit cards, and mobile payments are welcome.' },
-  { q: 'Where can I find the truck?', a: 'We serve Bergen, Morris, Sussex, and Passaic counties. Call us at (973) 907-6000 to find out where we are today!' },
+  { q: 'Where can I find the truck?', a: 'We serve Woodland Park, NJ. Call us at (973) 907-6000 to find out where we are today!' },
   { q: 'Do you cater events?', a: 'Absolutely—birthdays, schools, corporate events, and more.' },
 ]
 
@@ -72,11 +72,17 @@ const create = (tag, className, text) => {
 
 // Navigation toggle
 const navLinks = qs('#nav-links')
-qs('#menu-toggle').addEventListener('click', () => {
+const menuToggle = qs('#menu-toggle')
+menuToggle.addEventListener('click', () => {
+  const open = !navLinks.classList.contains('is-open')
   navLinks.classList.toggle('is-open')
+  menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false')
 })
 qsa('.nav__links a').forEach((link) =>
-  link.addEventListener('click', () => navLinks.classList.remove('is-open'))
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('is-open')
+    menuToggle.setAttribute('aria-expanded', 'false')
+  })
 )
 
 // Status card actions
