@@ -49,9 +49,9 @@ const menuItems = {
 }
 
 const testimonials = [
-  { name: 'Sarah M.', text: 'Best ice cream truck ever! Kids go crazy when they hear the music.', rating: 5 },
-  { name: 'Mike T.', text: 'Hired them for a birthday party—professional and delicious.', rating: 5 },
-  { name: 'Jennifer L.', text: 'Twist cone is perfection. Friendly crew and clean truck!', rating: 5 },
+  { name: 'Karen V.', text: 'Amazing friendly service! Was the perfect addition to my daughter\'s baby shower…such a hit! I would highly recommend to elevate your next party!', rating: 5 },
+  { name: 'Kimberly O.', text: 'We hired Randy for a Mother\'s Day/Staff Appreciation treat and it was a HUGE hit! The ice cream was high quality and Randy could not have been nicer.', rating: 5 },
+  { name: 'Malak M.', text: 'The yummiest ice cream you will have. Give it a try, highly recommend 🍦👍🏼', rating: 5 },
 ]
 
 const faqs = [
