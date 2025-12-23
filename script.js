@@ -82,7 +82,7 @@ qsa('.nav__links a').forEach((link) =>
 // Status card actions
 qs('#directions-btn').addEventListener('click', (e) => {
   e.preventDefault()
-  window.open('https://www.google.com/maps/dir/?api=1&destination=85%20Pompton%20Ave%2C%20Woodland%20Park%2C%20NJ%2007424', '_blank')
+  window.open('https://www.google.com/maps/dir/?api=1&destination=Woodland+Park,+NJ', '_blank')
 })
 
 // Menu tabs + items
